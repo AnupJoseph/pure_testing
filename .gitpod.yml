@@ -1,0 +1,4 @@
+tasks:
+  - init: |
+      - python -m venv python/mage/env
+      - pip install -r python/mage/requirements.txt
