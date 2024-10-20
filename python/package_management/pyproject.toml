@@ -1,0 +1,31 @@
+[project]
+name = "package-management"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "AnupJoseph", email = "43500348+AnupJoseph@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "duckdb>=1.1.2",
+    "pandas>=2.2.3",
+    "python-fasthtml>=0.7.1",
+]
+
+[project.scripts]
+package-management = "package_management:main"
+start = "package_management:start_app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "ipykernel>=6.29.5",
+    "mypy>=1.12.1",
+    "pytest>=8.3.3",
+    "pytest-cov>=5.0.0",
+    "ruff>=0.7.0",
+]
